@@ -1,0 +1,39 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2021-06-21 22:48+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/features/todos/add-todo-form.tsx:41
+#: src/features/todos/add-todo-form.tsx:44
+msgid "Add Todo"
+msgstr "Add Todo"
+
+#: src/features/language-switcher/language-switcher.tsx:13
+msgid "Language"
+msgstr "Language"
+
+#: src/features/todos/todo-header.tsx:12
+msgid "Nice job! There are no open todos."
+msgstr "Nice job! There are no open todos."
+
+#: src/features/todos/add-todo-form.tsx:17
+msgid "Todo cannot be empty"
+msgstr "Todo cannot be empty"
+
+#: src/features/todos/todo-header.tsx:10
+msgid "Welcome!"
+msgstr "Welcome!"
+
+#: src/features/todos/todo-header.tsx:15
+msgid "{0, plural, one {You have # open todo} other {You have # open todos}}"
+msgstr "{0, plural, one {You have # open todo} other {You have # open todos}}"

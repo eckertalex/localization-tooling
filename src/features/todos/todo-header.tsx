@@ -1,3 +1,4 @@
+import {t, Plural} from '@lingui/macro'
 import {useTodos} from 'features/todos/todo-context'
 
 function TodoHeader() {
@@ -6,12 +7,12 @@ function TodoHeader() {
 
   return (
     <>
-      <h1>Welcome!</h1>
+      <h1>{t`Welcome!`}</h1>
       {openTodos.length === 0 ? (
-        <p>Nice job! There are no open todos.</p>
+        <p>{t`Nice job! There are no open todos.`}</p>
       ) : (
         <p>
-          You have {openTodos.length} open todo{openTodos.length === 1 ? null : 's'}
+          <Plural value={openTodos.length} one="You have # open todo" other="You have # open todos" />
         </p>
       )}
     </>
