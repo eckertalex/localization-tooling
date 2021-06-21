@@ -10,6 +10,8 @@
 
 # production
 /build
+src/locales/_build/
+src/locales/**/*.js
 
 # misc
 .DS_Store
