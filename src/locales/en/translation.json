@@ -1,0 +1,15 @@
+{
+  "AddTodoForm": {
+    "addTodo": "Add",
+    "cannotBeEmpty": "Todo cannot be empty"
+  },
+  "LanguageSwitcher": {
+    "language": "Language"
+  },
+  "Todos": {
+    "noTodos": "Nice job! There are no open todos.",
+    "openTodos": "Keep up the good work! Only {{count}} todo left.",
+    "openTodos_plural": "You have {{count}} open todos",
+    "welcome": "Welcome!"
+  }
+}

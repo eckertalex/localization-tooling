@@ -1,19 +1,15 @@
+import {useTranslation} from 'react-i18next'
 import {useTodos} from 'features/todos/todo-context'
 
 function TodoHeader() {
+  const {t} = useTranslation()
   const {todos} = useTodos()
   const openTodos = todos.filter((todo) => !todo.complete)
 
   return (
     <>
-      <h1>Welcome!</h1>
-      {openTodos.length === 0 ? (
-        <p>Nice job! There are no open todos.</p>
-      ) : (
-        <p>
-          You have {openTodos.length} open todo{openTodos.length === 1 ? null : 's'}
-        </p>
-      )}
+      <h1>{t('Todos.welcome')}</h1>
+      {openTodos.length === 0 ? <p>{t('Todos.noTodos')}</p> : <p>{t('Todos.openTodos', {count: openTodos.length})}</p>}
     </>
   )
 }

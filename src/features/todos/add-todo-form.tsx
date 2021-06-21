@@ -1,7 +1,9 @@
 import React from 'react'
+import {useTranslation} from 'react-i18next'
 import {useTodos} from 'features/todos/todo-context'
 
 function AddTodoForm() {
+  const {t} = useTranslation()
   const {addTodo} = useTodos()
   const [todo, setTodo] = React.useState<string>('')
   const [error, setError] = React.useState<string | null>(null)
@@ -13,7 +15,7 @@ function AddTodoForm() {
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     if (todo.length === 0) {
-      setError('Todo cannot be empty')
+      setError(t('AddTodoForm.cannotBeEmpty'))
       return
     } else {
       addTodo(todo)
@@ -37,10 +39,10 @@ function AddTodoForm() {
           border: 0,
         }}
       >
-        Add Todo
+        {t('AddTodoForm.addTodo')}
       </label>
       <input id="todo-input" type="text" value={todo} onChange={handleChange} />
-      <button type="submit">Add Todo</button>
+      <button type="submit">{t('AddTodoForm.addTodo')}</button>
       {error ? <p style={{color: 'red'}}>{error}</p> : null}
     </form>
   )
