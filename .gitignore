@@ -10,6 +10,7 @@
 
 # production
 /build
+locales/*.po.json
 
 # misc
 .DS_Store

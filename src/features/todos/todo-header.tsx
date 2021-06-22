@@ -1,3 +1,4 @@
+import {t, ngettext, msgid} from 'ttag'
 import {useTodos} from 'features/todos/todo-context'
 
 function TodoHeader() {
@@ -6,12 +7,16 @@ function TodoHeader() {
 
   return (
     <>
-      <h1>Welcome!</h1>
+      <h1>{t`Welcome!`}</h1>
       {openTodos.length === 0 ? (
-        <p>Nice job! There are no open todos.</p>
+        <p>{t`Nice job! There are no open todos.`}</p>
       ) : (
         <p>
-          You have {openTodos.length} open todo{openTodos.length === 1 ? null : 's'}
+          {ngettext(
+            msgid`You have ${openTodos.length} open todo`,
+            `You have ${openTodos.length} open todos`,
+            openTodos.length
+          )}
         </p>
       )}
     </>

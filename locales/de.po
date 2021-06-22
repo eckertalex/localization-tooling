@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Plural-Forms: nplurals = 2; plural = (n != 1);\n"
+"Language: de\n"
+"mime-version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/features/todos/add-todo-form.tsx:17
+msgid "Todo cannot be empty"
+msgstr "Todo kann nicht leer sein"
+
+#: src/features/todos/add-todo-form.tsx:41
+#: src/features/todos/add-todo-form.tsx:44
+msgid "Add Todo"
+msgstr "Hinzufügen"
+
+#: src/features/todos/todo-header.tsx:10
+msgid "Welcome!"
+msgstr "Willkommen!"
+
+#: src/features/todos/todo-header.tsx:12
+msgid "Nice job! There are no open todos."
+msgstr "Super! Alle Todos sind erledigt."
+
+#: src/features/todos/todo-header.tsx:15
+#, javascript-format
+msgid "You have ${ openTodos.length } open todo"
+msgid_plural "You have ${ openTodos.length } open todos"
+msgstr[0] "Mach weiter so! Nur ${ openTodos.length } Todo übrig."
+msgstr[1] "Mach weiter so! Nur ${ openTodos.length } Todos übrig."
+
+#: src/features/language-switcher/language-switcher.tsx:12
+msgid "Language"
+msgstr "Sprache"

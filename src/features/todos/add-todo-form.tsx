@@ -1,4 +1,5 @@
 import React from 'react'
+import {t} from 'ttag'
 import {useTodos} from 'features/todos/todo-context'
 
 function AddTodoForm() {
@@ -13,7 +14,7 @@ function AddTodoForm() {
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     if (todo.length === 0) {
-      setError('Todo cannot be empty')
+      setError(t`Todo cannot be empty`)
       return
     } else {
       addTodo(todo)
@@ -37,10 +38,10 @@ function AddTodoForm() {
           border: 0,
         }}
       >
-        Add Todo
+        {t`Add Todo`}
       </label>
       <input id="todo-input" type="text" value={todo} onChange={handleChange} />
-      <button type="submit">Add Todo</button>
+      <button type="submit">{t`Add Todo`}</button>
       {error ? <p style={{color: 'red'}}>{error}</p> : null}
     </form>
   )
